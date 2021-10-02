@@ -148,4 +148,4 @@ Distributed under the MIT License. See [LICENSE](https://github.com/ACM-VIT/cert
 [issues-shield]: https://img.shields.io/github/issues/acm-vit/certify.svg?style=for-the-badge
 [issues-url]: https://github.com/acm-vit/certify/issues
 [license-shield]: https://img.shields.io/github/license/acm-vit/certify.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[license-url]: https://github.com/ACM-VIT/certify/blob/master/LICENSE
