@@ -19,7 +19,7 @@
   <p align="center">
     A mass certificate generator with a given design
     <br />
-    <a href="https://tungsten-xylophone-67c.notion.site/Certify-31b18545955a42288951f17dba7ce62a"><strong>Explore the docs Â»</strong></a>
+    <a href="https://tungsten-xylophone-67c.notion.site/Certify-31b18545955a42288951f17dba7ce62a"><strong>Explore the docs »</strong></a>
     <br />
     <br />
   </p>
