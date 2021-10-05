@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-function CSVReader() {
+function CSVReader(props) {
     const [file, setFile] = useState();
     const [csvArray, setCSVArray] = useState([]);
 
@@ -9,9 +9,11 @@ function CSVReader() {
         const reader = new FileReader();
 
         reader.onload = function(ev) {
+            ev.preventDefault();
             const data = ev.target.result;
             console.log(data);
             processCSVData(data);
+            props.getCSVData(csvArray);
         }
 
         reader.readAsText(csvFile);
