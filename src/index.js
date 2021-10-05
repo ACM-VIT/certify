@@ -3,10 +3,12 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import radio_button from "./radio_button";
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <radio_button></radio_button>
   </React.StrictMode>,
   document.getElementById("root")
 );
