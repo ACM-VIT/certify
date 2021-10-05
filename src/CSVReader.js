@@ -3,6 +3,7 @@ import { useState } from 'react';
 function CSVReader(props) {
     const [file, setFile] = useState();
     const [csvArray, setCSVArray] = useState([]);
+    const [isCSV, setIsCSV] = useState(false);
 
     function submitFile() {
         const csvFile = file;
@@ -40,15 +41,24 @@ function CSVReader(props) {
         <form id='submit-csv-form'>
             <input type="file" accept=".csv" id="file"
                 onChange={(ev) => {
-                    setFile(ev.target.files[0])
+                    var fileName = ev.target.files[0].name;
+                    if (fileName.split(".").pop() == "csv") {
+                        setIsCSV(true);
+                        setFile(ev.target.files[0]);
+                    } else {
+                        setIsCSV(false);
+                        alert("Only CSV files are accepted.");
+                    }           
                 }}>
             </input>
             <br/>
             <button
                 onClick={(ev) => {
                     ev.preventDefault();
-                    if (file)
+                    if (file && isCSV)
                         submitFile();
+                    else if (file && !isCSV)
+                        alert("Only CSV files are accepted.");
                 }}>Submit</button>
         </form>
     );
