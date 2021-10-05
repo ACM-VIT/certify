@@ -13,7 +13,7 @@ function CSVReader(props) {
             const data = ev.target.result;
             console.log(data);
             processCSVData(data);
-            props.getCSVData(csvArray);
+            props.csvData(csvArray);
         }
 
         reader.readAsText(csvFile);
@@ -21,7 +21,7 @@ function CSVReader(props) {
 
     //Comma as the deliminator
     function processCSVData(data) {
-        const headers = data.slice(0, data.indexOf("\n").split(","));
+        const headers = data.slice(0, data.indexOf("\n")).split(",");
         const rows = data.slice(data.indexOf("\n") + 1).split("\n");
 
         const array = rows.map((row) => {
