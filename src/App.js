@@ -5,6 +5,7 @@ function App() {
   const [csvData, setCSVData] = useState([]);
 
   const getCSVData = (data) => {
+    console.log(data);
     setCSVData(data);
   }
 
