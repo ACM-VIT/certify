@@ -3,7 +3,7 @@ import "./Radiob.css";
 
 function Radiob(){
     return(
-        <div className="Radiob">
+        <div className="Radiob m-10">
 
             <input type="radio" id="choice1" name="certi" value="certificate"></input>
             <label for="choice1">E-mail each user their certificates</label>

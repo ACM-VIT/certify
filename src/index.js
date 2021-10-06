@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Radiob from "./Radiob";
+import Radiob from "./components/Radiob";
 
 ReactDOM.render(
   <React.StrictMode>
