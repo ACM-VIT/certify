@@ -3,12 +3,12 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import Radiob from "./components/Radiob";
+
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
-    <Radiob/>
+    
   </React.StrictMode>,
 
   document.getElementById("root")
