@@ -12,6 +12,6 @@ function Radiob(){
             <label for="choice2">download all certificates as pdf in a zip file</label>
         </div>
     );
-}
+} 
 
 export default Radiob;
