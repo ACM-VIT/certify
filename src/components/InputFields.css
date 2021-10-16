@@ -1,0 +1,13 @@
+.form-input-lockup {
+    display: flex;
+    margin: 10px 5px;
+}
+
+.form-field-label {
+    padding: 5px;
+    font-weight: bold;
+}
+
+.form-field {
+    padding: 5px;
+}
