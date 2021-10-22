@@ -4,6 +4,8 @@ import Radiob from "./components/Radiob";
 import InputFields from "./components/InputFields";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Preview from "./components/Preview";
+import samplePDF from "./sample.pdf";
 
 function App() {
   // State settings for input field files
@@ -12,6 +14,7 @@ function App() {
   const [background, setBackground] = useState(null);
   const [eSignature, setESignature] = useState(null);
   const [csvJson, setCsvJson] = useState(null);
+  const [preview, setpreview] = useState(false);
   let errors = { input: "" };
 
   // Single function updates input field file states based on input field name
@@ -53,6 +56,12 @@ function App() {
       <Navbar />
       <div className="flex-grow">
         <Radiob csvComponent={<CSVReader csvData={getCSVData} />} />
+        <button className="mx-10 text-blue-400" onClick={() => setpreview(!preview)}>
+          Preview
+        </button>
+        <div className={preview && "hidden"}>
+          <Preview pdf={samplePDF} />
+        </div>
       </div>
       <Footer />
     </div>
